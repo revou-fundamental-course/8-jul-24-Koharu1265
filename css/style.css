@@ -1,0 +1,238 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+h1 {
+    font-family: sans-serif;
+}
+
+h2 {
+    font-family: sans-serif;
+}
+
+h3 {
+    font-family: sans-serif;
+}
+
+
+.main-title {
+    text-align: center;
+}
+
+main {
+    justify-content: space-around;
+    display: flex;
+}
+
+.split {
+    flex: 1;
+    display: block;
+    padding: 10px;
+}
+
+form {
+    background-color: #F8F8FF;
+    padding: 7px;
+    border-radius: 12px;
+}
+
+button {
+    background-color: #FFEBCD; 
+    border: 2px solid black;   
+    border-radius: 12px;           
+    color: black;              
+    padding: 10px 16px;        
+    text-align: center;        
+    text-decoration: none;     
+    display: inline-block;  
+    font-size: 16px;           
+    margin: 4px 2px;        
+    cursor: pointer;          
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+button:hover {
+    background-color: rgb(2, 129, 202);         
+}  
+
+input[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=number]:focus {
+  border: 3px solid #2F4F4F;
+}
+
+section .result {
+    text-align: center;
+    background-color: #F8F8FF;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result button {
+    display: block;
+    margin: 0 auto;
+}
+
+.RadioInput {
+    font-size: 15px;
+    font-weight: 200;
+    text-transform: capitalize;
+    display: inline-block;
+    color: Black;
+    font-family: poppins, sans-serif;
+    margin-bottom: 20px;
+}
+
+.RadioPisah + .RadioPisah {
+    margin: 20px;
+}
+
+a:link, a:visited {
+    background-color: #00a6d8;
+    color: rgb(0, 0, 0);
+    padding: 12px 19px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 12px;
+    border: 2px solid;
+    font-size: 15px;
+    font-weight: 200;
+    font-family: poppins, sans-serif;
+    text-transform: capitalize;
+}
+
+a:hover, a:active {
+    background-color: #FFEBCD;
+    transition: 0.3s;
+}
+
+.gizi {
+    margin-left: 30px;
+    text-align: center;
+}
+
+a.style {
+    margin-left: 30px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+
+.playstore, .apple {
+width: 200px;
+border: 0;
+background-color: none;
+
+}
+
+
+.playstore, .apple {
+    width: 200px;
+    border: none;
+    background-color: white;
+}
+
+a.applelink{
+    background-color: white;
+    border: none;
+}
+
+a.playstorelink{
+    background-color:white;
+    border: none;
+}
+
+.gemukkurus{
+    text-align: center  ;
+padding-top: 5px;
+}
+
+.akhir {
+background-color: #F8F8FF;
+padding-bottom: 10px;
+}
+
+.linkGizi {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.GambarApk {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 40px;
+    border: none;
+}
+
+
+/* Modal content */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 300px;
+  
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: #393c76 -1px 2px 2px 1px;
+  }
+  
+  #modalText {
+    padding-top: 8px;
+    padding-right: 5px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(24, 23, 23);
+  }
+  
+  .modal-wrong {
+  border: 2px solid red;
+  }
+  
+  .modal-correct {
+    border: 2px solid green;
+    }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .close:hover {
+    color: #d41111; 
+  }

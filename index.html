@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Main Title -->
+    <header class="main-title"></header>
+
+    <main>
+        <!-- left content -->
+        <section class="split">
+            <!-- MAIN ARTIKEL -->
+            <h1>Kalkulator BMI</h1>
+            <article>
+                <p> Ingin tahu apakah berat badan Anda sudah ideal? Menjaga berat badan yang sehat adalah kunci utama
+                    untuk menjaga kesehatan jangka panjang. Dengan menggunakan kalkulator BMI kami, Anda bisa mengetahui
+                    apakah berat badan Anda sudah sesuai dengan tinggi badan Anda. Cek sekarang dan dapatkan hasilnya
+                    dalam hitungan detik! Ini adalah langkah pertama yang mudah menuju hidup sehat dan seimbang. Jangan
+                    tunda lagi, mulailah perjalanannya sekarang!</p>
+            </article>
+
+            <!-- FORM -->
+            <section>
+                <form onsubmit="event.preventDefault(); calculate();">
+                    <div>
+                        <h3>Jenis Kelamin</h3>
+                        <label class="RadioInput">
+                            <label class="RadioPisah">
+                                <input type="radio" id="selection-man" name="gender" value="man">
+                                <label for="selection-man">Laki Laki</label>
+                            </label>
+                            <label class="RadioPisah">
+                                <input type="radio" id="selection-woman" name="gender" value="woman">
+                                <label for="selection-woman">Perempuan</label>
+                            </label>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label for="input-berat-badan">Berat badan (Kg)</label>
+                        <input type="number" id="berat">
+                    </div>
+
+                    <div>
+                        <label for="input-usia">Usia (Tahun)</label>
+                        <input type="number" id="usia">
+                    </div>
+                    <div>
+                        <label for="input-Tinggi-badan">Tinggi badan (cm)</label>
+                        <input type="number" id="tinggi">
+                    </div>
+                    <div>
+                        <button class="Calculate" id="submit" type="submit">Submit BMI</button>
+                        <button type="reset" class="RESET">Reset</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- FORM ARTICLE -->
+            <section>
+                <header>
+                    <h2>Keunggulan Fitur</h2>
+                </header>
+                <article>
+                    <p>1.Menghitung berat badan
+                        <br>
+                        2.Menentutkan kategori berat badan ideal atau tidak
+                        <br>
+                        3.Mempersiapkan program penurunan berat badan
+                        <br><br>
+                        Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh
+                        mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya,
+                        selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.
+                        <br><br>
+                        Kalkulator akan memberi anda gambaran tentang perbandingan berat badan anda dengan nilai umum.
+                        Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan anda (Dalam kilogram) dibagi dengan
+                        kuadrat tinggi badan anda (dalam meter) atau BMI = kg/m²
+                    </p>
+                </article>
+            </section>
+        </section>
+
+        <!-- RIGHT Content -->
+        <section class="split">
+            <!-- RESULT -->
+            <article>
+                <header>
+                    <h1>Hasil</h1>
+                </header>
+                <!-- result section -->
+                <section class="result">
+                    <p>Hasil Result adalah:</p>
+                    <div id="HasilBmi">
+                        <h2 id="result"></h2>
+                    </div>
+                    <p class="comment"></p>
+                    <button class="Submit" id="downloadButton" style="display: none;">Download Hasil BMI</button>
+                </section>
+                <!-- hasil article -->
+                <article>
+                    <p class="beda"></p>
+                    <div class="linkGizi">
+                        <a href="https://play.google.com/store/apps/details?id=com.gizinusantara.user&hl=id" class="style" target="_blank">Konsultasi ahli gizi via aplikasi</a>
+                        <a href="https://www.alodokter.com/seputar-ahli-gizi-tugas-dan-kondisi-yang-memerlukan-konsultasi" class="style" target="_blank">Registrasi online ahli gizi</a>
+                    </div>
+                    <br>
+                    <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan risiko penyakit
+                        seseorang. Anda perlu konsultasi lebih lanjut mengenai risiko dan kekhawatiran Anda terkait
+                        dengan berat badan anda</p>
+                </article>
+
+                <!-- General information -->
+                 <div class="akhir">
+                    <section class="information">
+                        <div class="informasi">
+                            <div class="gemukkurus">
+                                <h3></h3>
+                                <p>
+                                    <br>
+                                  
+                                    <br>
+                              
+                                    <br>
+                                  
+                                    <br><br>
+                                </p>
+                            </div>
+                            <div class="linkGizi">
+                                <a href="https://play.google.com/store/apps/details?id=com.gizinusantara.user&hl=id" class="gizi" target="_blank">Konsultasi ahli gizi via aplikasi</a>
+                                <a href="https://www.alodokter.com/seputar-ahli-gizi-tugas-dan-kondisi-yang-memerlukan-konsultasi" class="gizi" target="_blank">Registrasi online ahli gizi</a>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+    
+                <!-- Download Aplikasi -->
+                <div class="GambarApk">
+                    <a href="https://www.youtube.com/watch?v=D6aHo1VvCc8" class="applelink">
+                        <img class="apple" src="picture\appstores.png" alt="">
+                    </a>    
+                    <a href="https://www.youtube.com/watch?v=D6aHo1VvCc8" class="playstorelink">
+                        <img class="playstore" src="picture\googleplays.png" alt="">
+                    </a>
+                </div>
+            </section>
+    
+            <!-- modal content -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p id="modalText"></p>
+                </div>
+            </div>
+                 </div>
+                
+    </main>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
